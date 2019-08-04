@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Airtel Assignment.iml" filepath="$PROJECT_DIR$/Airtel Assignment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/calendar/calendar.iml" filepath="$PROJECT_DIR$/calendar/calendar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feature/feature.iml" filepath="$PROJECT_DIR$/feature/feature.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feature/home/home.iml" filepath="$PROJECT_DIR$/feature/home/home.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feature/nutrition/nutrition.iml" filepath="$PROJECT_DIR$/feature/nutrition/nutrition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feature/onboarding/onboarding.iml" filepath="$PROJECT_DIR$/feature/onboarding/onboarding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui/ui.iml" filepath="$PROJECT_DIR$/ui/ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feature/workout/workout.iml" filepath="$PROJECT_DIR$/feature/workout/workout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feature/workoutprogress/workoutprogress.iml" filepath="$PROJECT_DIR$/feature/workoutprogress/workoutprogress.iml" />
+    </modules>
+  </component>
+</project>

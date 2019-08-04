@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="smallest_text">8sp</dimen>
+    <dimen name="small_text">10sp</dimen>
+    <dimen name="smaller_norm_text">11sp</dimen>
+    <dimen name="smaller_text">12sp</dimen>
+    <dimen name="normal_text">13sp</dimen>
+    <dimen name="medium_text">14sp</dimen>
+    <dimen name="medium_norm_text">15sp</dimen>
+    <dimen name="large_text">16sp</dimen>
+    <dimen name="large_norm_text">17sp</dimen>
+    <dimen name="larger_text">18sp</dimen>
+    <dimen name="largest_text">20sp</dimen>
+    <dimen name="big_text">24sp</dimen>
+    <dimen name="bigger_text">24sp</dimen>
+
+    <dimen name="progress_bar_height">30dp</dimen>
+    <dimen name="progress_bar_margin_top">-12dp</dimen>
+
+    <!--Margin-->
+    <dimen name="no_margin">0dp</dimen>
+    <dimen name="margin_tiny">2dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_xmedium">8dp</dimen>
+    <dimen name="margin_semilarge">10dp</dimen>
+    <dimen name="margin_large">12dp</dimen>
+    <dimen name="margin_slarge">14dp</dimen>
+    <dimen name="margin_xlarge">16dp</dimen>
+    <dimen name="margin_sxlarge">18dp</dimen>
+    <dimen name="margin_xxlarge">20dp</dimen>
+    <dimen name="margin_sxxlarge">22dp</dimen>
+    <dimen name="margin_xxxlarge">24dp</dimen>
+    <dimen name="margin_xxxxlarge">25dp</dimen>
+    <dimen name="margin_x4large">28dp</dimen>
+    <dimen name="margin_x5large">30dp</dimen>
+    <dimen name="margin_x6large">32dp</dimen>
+    <dimen name="margin_x7large">34dp</dimen>
+    <dimen name="margin_x8large">40dp</dimen>
+    <dimen name="margin_x10large">48dp</dimen>
+    <dimen name="margin_x14large">68dp</dimen>
+
+    <!--Padding-->
+    <dimen name="no_padding">0dp</dimen>
+    <dimen name="padding_tiny">2dp</dimen>
+    <dimen name="padding_small">4dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">12dp</dimen>
+    <dimen name="pading_slarge">14dp</dimen>
+    <dimen name="padding_xlarge">16dp</dimen>
+    <dimen name="padding_sxlarge">18dp</dimen>
+    <dimen name="padding_xxlarge">20dp</dimen>
+    <dimen name="padding_sxxlarge">22dp</dimen>
+    <dimen name="padding_xxxlarge">24dp</dimen>
+    <dimen name="padding_x4large">28dp</dimen>
+    <dimen name="padding_x5large">30dp</dimen>
+
+    <dimen name="sequence_active_step_padding_top">12dp</dimen>
+    <dimen name="sequence_active_step_padding_bottom">16dp</dimen>
+    <dimen name="sequence_anchor_min_width">48dp</dimen>
+    <dimen name="sequence_anchor_max_width">80dp</dimen>
+</resources>

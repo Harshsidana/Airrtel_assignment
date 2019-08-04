@@ -1,0 +1,62 @@
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: "de.mannodermaus.android-junit5"
+
+configurations {
+    ktlint
+}
+
+android {
+    compileSdkVersion SDK_COMPILE_VERSION
+
+    buildTypes {
+        debug {
+            buildConfigField 'Boolean', "DEBUG_MODE", "true"
+            ext.enableCrashlytics = true
+        }
+        release {
+            buildConfigField 'Boolean', "DEBUG_MODE", "false"
+        }
+    }
+    defaultConfig {
+        minSdkVersion SDK_MIN_VERSION
+        targetSdkVersion SDK_TARGET_VERSION
+        versionCode BUILD_VERSION_CODE
+        versionName BUILD_VERSION_NAME
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+
+    testOptions {
+        junitPlatform {
+        }
+
+        unitTests.returnDefaultValues = true
+    }
+}
+
+dependencies {
+    ktlint "com.github.shyiko:ktlint:$ktlint_version"
+    testImplementation "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_stdlib_version"
+
+    androidTestImplementation "androidx.test:runner:$androidx_test_runner_version"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$androidx_test_espresso_version"
+}
+
+task ktlint(type: JavaExec, group: "verification") {
+    description = "Check Kotlin code style."
+    classpath = configurations.ktlint
+    main = "com.github.shyiko.ktlint.Main"
+    args "--reporter=plain", "--reporter=checkstyle,output=${buildDir}/ktlint.xml", "src/**/*.kt"
+    // to generate report in checkstyle format prepend following args:
+    // "--reporter=plain", "--reporter=checkstyle,output=${buildDir}/ktlint.xml"
+    // see https://github.com/shyiko/ktlint#usage for more
+}
+
+task ktlintFormat(type: JavaExec, group: "formatting") {
+    description = "Fix Kotlin code style deviations."
+    classpath = configurations.ktlint
+    main = "com.github.shyiko.ktlint.Main"
+    args "-F", "src/**/*.kt"
+}
