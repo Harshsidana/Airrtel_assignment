@@ -5,7 +5,7 @@ import com.squareup.moshi.Json
 class ApiReponse(
 
     @Json(name = "username") val username: String,
-    @Json(name = "name") val avatarUrl: String,
+    @Json(name = "name") val name: String,
     @Json(name = "type") val type: String,
     @Json(name = "url") val url: String,
     @Json(name = "avatar") val avatar: String,
