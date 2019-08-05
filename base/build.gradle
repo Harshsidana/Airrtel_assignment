@@ -33,25 +33,18 @@ dependencies {
     api "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:$coroutine_adapter_version"
     api "com.squareup.retrofit2:converter-moshi:$moshi_converter_version"
     api "com.squareup.okhttp3:logging-interceptor:$login_intercerptor_version"
-    /* Google Maps */
-    api "com.google.android.gms:play-services-places:$google_maps"
-    api "com.google.android.libraries.places:places:$places_library_version"
     /* Android Architecture Component - LiveData & ViewModel  */
     api "androidx.lifecycle:lifecycle-extensions:$android_lifecycle_version"
     kapt "androidx.lifecycle:lifecycle-compiler:$android_lifecycle_version"
     //gson for type converters
     api "com.google.code.gson:gson:$gson_version"
 
-    api "com.squareup.picasso:picasso:$picasso_version"
-
+    implementation "com.github.bumptech.glide:glide:4.8.0"
+    kapt 'com.github.bumptech.glide:annotations:4.9.0'
     //Dex
     api "com.android.support:multidex:$multidex_version"
 
-    //for calendar
-    api "com.jakewharton.threetenabp:threetenabp:$threetenabp_version"
 
-//    api "com.github.bumptech.glide:glide:4.8.0"
-//    kapt "com.github.bumptech.glide:compiler:4.8.0"
 
 }
 repositories {
